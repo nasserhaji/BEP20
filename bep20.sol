@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-contract BEP20Interface {
+contract ABDTOKEN {
     function totalSupply() public view returns (uint);
     function balanceOf(address tokenOwner) public view returns (uint balance);
     function allowance(address tokenOwner, address spender) public view returns (uint remaining);
@@ -23,7 +23,7 @@ contract SafeMath {
     }
 }
 
-contract BEP20TOKEN is BEP20Interface, SafeMath {
+contract Abdelnasser is ABDTOKEN, SafeMath {
     string public name;
     string public symbol;
     uint8 public decimals;
